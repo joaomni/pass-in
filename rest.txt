@@ -1,0 +1,10 @@
+// HTTP Methods: GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, ...
+//Corpo da Requisição (Request Body)
+//Parâmetros de busca (Search Params / Query Params) -> 'http://localhost:3333/users?name=Ryan'
+//Parâmetros de rota (Route Params) -> 'DELETE http://localhost:3333/users/5'
+//Cabaçalhos (Headers) -> Contexto
+
+// 20x => SUCCESS
+// 30x => REDIRECT
+// 40x => CLIENT ERROR
+// 50x => SERVER ERROR
