@@ -2,22 +2,28 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Novo evento 3",
-  "details": null,
-  "maximumAttendees": 1
+  "title": "Helmet Royale",
+  "details": "Torneio BattleRock",
+  "maximumAttendees": 4
 }
 
 ###
-POST http://localhost:3333/events/4d622616-8ee8-4e06-9a05-fe7f1a5c8763/attendees
+POST http://localhost:3333/events/233bed64-8793-48b4-83d6-19fb124b8216/attendees
 Content-Type: application/json
 
 {
-  "name": "Joao",
-  "email": "joaojpmoreira25@gmail.com"
+  "name": "Ulisses",
+  "email": "ulisses@gmail.com"
 }
 
 ###
-GET  http://localhost:3333/events/4d622616-8ee8-4e06-9a05-fe7f1a5c8763
+GET  http://localhost:3333/events/233bed64-8793-48b4-83d6-19fb124b8216
 
 ###
-GET http://localhost:3333/attendees/3/badge
+GET http://localhost:3333/attendees/6/badge
+
+###
+GET http://localhost:3333/attendees/7/check-in
+
+###
+GET http://localhost:3333/events/233bed64-8793-48b4-83d6-19fb124b8216/attendees
